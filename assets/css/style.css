@@ -29,6 +29,12 @@ body {
     background-size: cover;
 }
 
+ /* footer */
+ .footer-text {
+    font-weight: 700;
+    background: rgba(194, 197, 241, 0.2);
+ }
+
 
 /* ################ TEST CODE - REMOVE BEFORE DEPLOYMENT ################# */
 /* Border for testing flex expanse */
