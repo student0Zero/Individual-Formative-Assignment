@@ -5,9 +5,24 @@
     height: 60px;
 } */
 
+/* Fonts */
+body {
+    font-size: "Exo";
+}
 
-/* Images */
-/* nav & footer img */
+/* Colours */
+/* credit - https://itsopensource.com/rainbow-text/ */
+.rainbow-text {
+    background: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+    font-weight: 900;
+    font-size: 60px;
+ }
+
+ 
+/* Images Styling*/
 .bg-hero-img {
     background-image: url(/assets/images/istockphoto-1571979279-612x612.jpg);
     min-height: 50px;
