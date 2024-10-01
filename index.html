@@ -68,9 +68,11 @@
     </nav>
 
     <!-- call to action section -->
+     <!-- align text left on small -->
     <section class="text-sm-start text-center p-5 p-lg-3 bg-dark text-light">
         <div class="container">
 
+            <!-- flex on small -->
             <div class="d-sm-flex align-items-center justify-content-between text-center">
 
                 <div>
@@ -87,30 +89,6 @@
                     <!-- add modal form to signup to weekly news letter -->
                     <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#seek-well">
                         Find Your Mindness Well
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sign Up Section -->
-    <section class="bg-primary text-light p-5">
-        <div class="container">
-            <div class="d-md-flex align-items-center justify-content-between">
-
-                <!-- padding end = 5 -->
-                <h3 class="mb-md-0 pe-5">
-                    Get Our Weekly Love Letters!
-                </h3>
-
-                <!-- code adapterd from bootstrap input-forms section -->
-                <div class="input-group mb-3">
-
-                    <input type="text" class="form-control" placeholder="Your email address lives here..."
-                        aria-label="Recipient's email address" aria-describedby="button-subscribe">
-
-                    <button class="btn btn-lg btn-success" type="button" id="button-subscribe">
-                        Send Me Love
                     </button>
                 </div>
             </div>
@@ -686,10 +664,42 @@
         </div>
     </section>
 
+    <!-- Sign Up Section -->
+    <section class="bg-primary text-light p-3">
+        <div class="container">
+            <!-- restrict flex until md -->
+            <div class="d-md-flex justify-content-between align-items-center">
+
+                <!-- padding end 5 -->
+                <h3 class="mb-md-0 pe-5">
+                    Get Our Weekly Love Letters!
+                </h3>
+
+                <!-- bs input group text field too wide om sm/md. Using media query in .css to force text box to be smaller on lg -->
+                <div class="input-group subscribe-text-box">
+
+                    <input 
+                    type="email" 
+                    class="form-control" 
+                    placeholder="Your email address lives here..."
+                    aria-label="Recipient's email address" 
+                    aria-describedby="button-subscribe" 
+                    required>
+
+                    <button 
+                    class="btn btn-lg btn-success" 
+                    type="button" 
+                    id="button-subscribe">
+                        Send Me Love
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
      <!-- FOOTER Section -->
     <footer class="p-5 bg-hero-img text-dark text-center position-relative">
-
         <div class="container">
 
             <!-- text weight set inline with fw-bold -->
@@ -749,6 +759,7 @@
 
                             <!-- Issue 1 Workaround. Add close button as top right close not working -->
                             <!-- Issue 1 Workaround limitation - unable to add required to input fields as this causes modal to lock open -->
+                            <!-- Issue 1 Workaround does not work if text present in text field -->
                             <button type="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </form>

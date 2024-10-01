@@ -35,6 +35,14 @@ body {
     background: rgba(194, 197, 241, 0.2);
  }
 
+ /* Media Query */
+ /* used to force bootstrap input group text field to be smaller */
+ @media (min-width: 768px) {
+    .subscribe-text-box {
+        width:50%;
+    }
+ }
+
 
 /* ################ TEST CODE - REMOVE BEFORE DEPLOYMENT ################# */
 /* Border for testing flex expanse */
