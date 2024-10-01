@@ -1,0 +1,26 @@
+/* to fix navbar overflow with fixed top by moving i down by 60px */
+/* body::before {
+    display: block;
+    content: '';
+    height: 60px;
+} */
+
+
+/* Images */
+/* nav & footer img */
+.bg-hero-img {
+    background-image: url(/assets/images/istockphoto-1571979279-612x612.jpg);
+    min-height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ################ TEST CODE - REMOVE BEFORE DEPLOYMENT ################# */
+/* Border for testing flex expanse */
+.testing-border {
+    border:orange; 
+    border-width: 5px; 
+    border-style: dotted;
+}

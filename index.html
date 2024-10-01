@@ -28,8 +28,42 @@
 </head>
 
 <body>
-
     <!-- nav section -->
+    <!-- navbar containing bg image fixed top padding vertical 3 and responsive at <lg-992px -->
+    <nav class="navbar navbar-expand-md bg-hero-img">
+        <div class="container">
+            <a href="/index.html" class="navbar-brand"><strong>Mindness Well</strong></a>
+
+            <!-- navbar button @media <md -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenulink">
+                <!-- span generates the hamburger icon -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenulink">
+                <!-- ms-auto moves items to right -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/reading.html" class="nav-link">Reading</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/music.html" class="nav-link">Music</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/video.html" class="nav-link">Videos</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
 
     <!-- Hero section -->
 
@@ -46,6 +80,7 @@
     <!-- contact and map section -->
 
     <!-- Footer Section -->
+
 
     <!-- Bootstrap JS Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
