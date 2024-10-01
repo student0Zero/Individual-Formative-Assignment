@@ -58,6 +58,9 @@ Discuss how accessibility guidelines were adhered to, including colour contrast 
 Describe how DALL-E was used for image generation, including examples of successes and challenges.  
 **Guidance:** Specifically mention how you used DALL-E for image generation and the impact this had on your design process.
 
+### ahrefs
+I used this site to generate fake bios for the site. The site uses AI to generate social media bios based on keywords. The site worked really well and i think with more detailed keywords, the results could have been more detailed.
+
 ## Features Implementation
 
 ### Core Features (Must-Haves)
