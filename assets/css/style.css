@@ -1,13 +1,6 @@
-/* to fix navbar overflow with fixed top by moving i down by 60px */
-/* body::before {
-    display: block;
-    content: '';
-    height: 60px;
-} */
-
 /* Fonts */
 body {
-    font-size: "Exo";
+    font-family: "Roboto", sans-serif;
 }
 
 /* Colours */
@@ -42,12 +35,3 @@ body {
         width:50%;
     }
  }
-
-
-/* ################ TEST CODE - REMOVE BEFORE DEPLOYMENT ################# */
-/* Border for testing flex expanse */
-.testing-border {
-    border:orange; 
-    border-width: 5px; 
-    border-style: dotted;
-}
