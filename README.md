@@ -1,47 +1,111 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Project Title
+# The Mental-Well. *The knowledge well for your mental well being*
 
 ## Overview
+The Mental-Well is a website which seeks to provide mindfulness information and resource links which is presented in a supportive and organised layout, using a clean design supplemented by a calming colour pallet.  
+
+Addition pages will be developed in future to include a dedicated;
+- reading page (selected articles, news links, blog posts and research pages)
+- video library page (a gallery of videos)
+- meditation based music page (media embedded gallery page).
 
 ### Purpose
-A brief description of the project's purpose, what it aims to achieve, and the value it provides to the users.  
-**Guidance:** Begin filling out this section during Phase 1: Ideation & Initial Setup. Clearly articulate the main goal of your project, what it aims to achieve, and how it will provide value to your target audience.
+The site's aim is to present information which is simple and jargon free; that avoids technical or complicated language; and attempts to avoid over nesting in order to avoid the user 'going down rabbit holes' in search for the relevant required resource, specific to that site visits goal. We hope that the site is a place that users choose to return, and with that in mind, we wish to make each visit uniquely relevant. This is because mental health and wellness needs are never static and can take may different forms and symptoms, even changing hourly for some.    
 
 ### Target Audience
-Identify the target audience for your website and explain why this audience will benefit from the project.  
-**Guidance:** Use this section to identify who will benefit from your project and why. This should be informed by your user stories and overall project objectives.
+The target audience for the site will be individuals looking for a centralised source of information which gathers mindfulness focused videos, scholarly papers, music links, and community support. 
+
+The site also target freelance mindfulness counsellors as a site from which they can offer their services. As such the site has sections dedicated for freelance mindfulness counsellors to provide their services. This feature is currently only presenting four options. 
 
 ## User Stories
+### Site Actors
+1. Users seeking wellness, mindfulness and mental health information
+2. Freelance counsellors seeking to showcase their business.
+3. Site developer/designer seeking to develop a low maintenance and appealing site 
+
+### User Stories
+**USER STORY #1:** As a user I want access basic, user friendly information on mindfulness and mental health issues, which is presented in a beginner friendly and accessible way.
+
+**USER STORY #2:** As a counsellor I want a prominent place on the site to show case my offerings 
+
+**USER STORY #3:** As a user I want to access a site which is presented by a clean and supportive design
+
+**USER STORY #3**: As the site designer I want to restrict the initial MVP to only HTML, CSS and Bootstrap
+
+**USER STORY #5:** As the site designer I want to present a calming, well-organised user experience.
+
+**USER STORY #6:** As a user I want the site to utilise all accessibility enhancements
+
+**USER STORY #7:** As a user I want access to positive affirmations which update on each visit
+
+**USER STORY #8:** As a user I want access to a searchable video library presented in a gallery format, which filters the offerings based on my search criteria.
+
+**USER STORY #9:** As a user I want access to a searchable video music presented in a gallery format, which filters the offerings based on my search criteria.
+
+**USER STORY #10:** As a user I want access to a searchable reading library presented in a gallery format, which filters the offerings based on my search criteria.
 
 ### Must-Have User Stories
-- **User Story 1:** Briefly describe the must-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
-- **User Story 2:** Briefly describe the must-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
+**USER STORY #1:** As a user I want access basic, user friendly information on mindfulness and mental health issues, which is presented in a beginner friendly and accessible way.
 
-(Include all prioritized must-have features)  
-**Guidance:** Draft the user stories during Phase 1: Ideation & Initial Setup and update them as you complete Phase 2: Must User Stories Implementation & Testing. Document each must-have feature here along with its acceptance criteria.
+**Acceptance Criteria:** 
+1. The site is intuitive to navigate
+2. The site uses a clean uncluttered design
+3. The site clearly identifies the purpose of each section via informative titles
+
+**USER STORY #2:** As a counsellor I want a prominent place on the site to show case my offerings 
+**Acceptance Criteria:**
+1. The site uses cards to presented a summary of each counsellor where by they can provide a brief bio and social media links.
+
+**USER STORY #3:** As a user I want to access a site which is presented by a clean and supportive design.
+**Acceptance Criteria:**
+1. The site will be laid out using Bootstrap grid system
+2. the site will utilise cards and cascades to group information
+3. the site will utilise accordion to compress information and avoid clutter
+
+**USER STORY #4:** As the site designer I want to restrict the initial MVP to only HTML, CSS and Bootstrap.
+**Acceptance Criteria:**
+1. The site will be built using html, css and bootstrap only
+
+**USER STORY #5:** As the site designer I want to present a calming, well-organised user experience.
+**Acceptance Criteria:**
+1. The site will use a calming colour pallet
+2. the site will provide user customisation for the site mood similar to a dark/light mode swithc
+
+**USER STORY #6:** As a user I want the site to utilise all accessibility enhancements
+**Acceptance Criteria:**
+1. the site will utilise alt narrative throughout
 
 ### Should-Have User Stories
-- **User Story 1:** Briefly describe the should-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
-- **User Story 2:** Briefly describe the should-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
+**USER STORY #8:** As a user I want access to a searchable video library presented in a gallery format, which filters the offerings based on my search criteria.
 
-(Include all prioritized should-have features)  
-**Guidance:** Document the secondary features that you aim to implement in Phase 3: Should User Stories Implementation & Any Advanced Features. Include clear acceptance criteria for each.
+**USER STORY #9:** As a user I want access to a searchable video music presented in a gallery format, which filters the offerings based on my search criteria.
+
+**USER STORY #10:** As a user I want access to a searchable reading library presented in a gallery format, which filters the offerings based on my search criteria.
 
 ### Could-Have User Stories
-- **User Story 1:** Briefly describe the could-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
-- **User Story 2:** Briefly describe the could-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
-
-(Include any could-have features considered for future enhancements)  
-**Guidance:** Document any optional features that are nice to have but not essential.
+USER STORY #7: As a user I want access to positive affirmations which update on each visit
 
 ## Design Decisions
+The initial design was to have a left aligned site table of content panel, and a right aligned 'on this page table of content page' for easy navigation as the site grows. This layout was modelled on the Bootstrap 5 home page which uses the same approach. This concept was expected to look like this...
+![Initial Wireframe MVP] (/ReadMe_Resources/Wireframe MVP-initial.png)
+
+![Image caption](/ReadMe_Resources/Wireframe MVP-initial.png)
+
+However, this approach was dropped for an 'out of the box' mobile friendly layout, and the side panel version pushed for later consideration. This decision was made mainly due to time constraint not allow for the effort of design how the side panels would collapse when in mobile view. Additionally, the use and knowledge of 'Scrollspy' is required, with the learning also addition to lost time.
+
+The colour themes for the site have not currently been achieved and will be required for future updates. The intention is to use the same colour palette as those used at this site: [Smashing Magazine](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/) This site used a shade of green (which I found difficult to replicate) white text and an orange-brown for headings (which i also found difficult to replicate). I did however utilise the rainbow text effect used on this sites title, by using .css to style using linear gradient and background clip.
+
+It was also my intent to use the [Smashing Magazine](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/) use of embedded the toc into the main body, but this was abandoned after a few attempts as I could not make it work in mobile view.
+
+I decided to use the following global design rules:
+1. Rule of thirds to apply throughout. both vertically and horizontally.
+2. Nav bar and footer bar were to use the same background
+3. colour pallet for the site was to be darker hues resembling those used on [Smashing Magazine](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/)
+4. main content was to be presented in cards to avoid overwhelm for the user
+5. A mood switch function to allow the user to customise the site to suit their mood. like dark/light mode but tailored to be happy/moody modes which would effect the lighting, colours etc.
+
+Lastly it was my intent to use Bootstrap Jumbotron as a main  element on the site, but this feature has been removed from Bootstrap 5. It is recommended that styling is used to recreate the jumbotron effect, but I only realised its omission from BS5 at a later stage in the development process. 
 
 ### Wireframes
 Include wireframes for key sections of your website.  
