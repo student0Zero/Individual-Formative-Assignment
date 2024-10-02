@@ -88,9 +88,9 @@ USER STORY #7: As a user I want access to positive affirmations which update on 
 
 ## Design Decisions
 The initial design was to have a left aligned site table of content panel, and a right aligned 'on this page table of content page' for easy navigation as the site grows. This layout was modelled on the Bootstrap 5 home page which uses the same approach. This concept was expected to look like this...
-![Initial Wireframe MVP] (/ReadMe_Resources/Wireframe MVP-initial.png)
 
-![Image caption](/ReadMe_Resources/Wireframe MVP-initial.png)
+![plot](/ReadMe_Resources/Wireframe%20MVP-initial.png)
+
 
 However, this approach was dropped for an 'out of the box' mobile friendly layout, and the side panel version pushed for later consideration. This decision was made mainly due to time constraint not allow for the effort of design how the side panels would collapse when in mobile view. Additionally, the use and knowledge of 'Scrollspy' is required, with the learning also addition to lost time.
 
@@ -108,99 +108,137 @@ I decided to use the following global design rules:
 Lastly it was my intent to use Bootstrap Jumbotron as a main  element on the site, but this feature has been removed from Bootstrap 5. It is recommended that styling is used to recreate the jumbotron effect, but I only realised its omission from BS5 at a later stage in the development process. 
 
 ### Wireframes
-Include wireframes for key sections of your website.  
-Briefly describe the design choices, including layout, colour schemes, and fonts.  
-**Guidance:** Start this section during Phase 1: Ideation & Initial Setup and update it throughout Phase 2 and Phase 3. Include digital wireframes created in Phase 1. Document the reasoning behind your layout choices, colour schemes, and font selections.
+I used balsamiq to generate the large display view for the site in low fidelity but did not create on for the mobile view as i was using bootstrap. Bootstraps use develops from a mobile first approach by their integration of flexbox, and so the main consideration for me was how the site would unfold into larger screens. I therefore decided not to spend time developing a mobile view as the site would naturally collapse due to bootstraps flexbox integration. 
+
+The file below show the balsamiq wireframe based on the initial two panel toc design. As discussed earlier this approach deemed too difficult for my current skills and I was forced to adapt the design post design.  I did however, maintain the general theme as shown in the wireframe when developing the Minimum Viable Product (MVP). The Nav/Footer as well as the main content are the same as in the coded MVP. I did however, as a later design decision, move the 'signup banner' down to above the footer as it did not seem to fit the flow once coded.
+
+The balsamiq wireframe also contains my original design notes.
+![plot](/ReadMe_Resources/balsamiq-Desktop-view.png)
 
 ### Accessibility Considerations
-Discuss how accessibility guidelines were adhered to, including colour contrast and alt text for images.  
-**Guidance:** Outline how you've incorporated accessibility into your design, ensuring that your project adheres to guidelines such as WCAG.
+There is still a lot of work to do for accessibility considerations for this site. In particular the colour pallet is currently only considered as temporary as discussed in the design section. Therefore colour challenges to users are not optimal.
+
+I also intend to review the code for better usage of aria labelling.
 
 ## AI Tools Usage
+No AI were harmed in the making of this website.
 
 ### DALL-E
-Describe how DALL-E was used for image generation, including examples of successes and challenges.  
-**Guidance:** Specifically mention how you used DALL-E for image generation and the impact this had on your design process.
+DALL-E Not used.
 
 ### ahrefs
-I used this site to generate fake bios for the site. The site uses AI to generate social media bios based on keywords. The site worked really well and i think with more detailed keywords, the results could have been more detailed.
 
 ## Features Implementation
-
 ### Core Features (Must-Haves)
-- **Feature 1:** Description of the implemented feature.
-- **Feature 2:** Description of the implemented feature.
-
-(Include all must-have features)  
-**Guidance:** Use this section as you complete Phase 2: Must User Stories Implementation & Testing. Document all the must-have features you implemented, explaining how they align with the user stories and acceptance criteria.
+The following feature have been implemented:
+1. collapsing nav bar menus (triggered on size size)
+2. go-to-the-top button added to the footer to help avoid scrolling back up to the top of the site
+3. accordion section with collapsing informational sections
+4. cards were used to organise information next to a relevant engaging image
+5. Modal form to trigger sign up form inputs
+6. location map embedded into iframe.
 
 ### Advanced Features (Should-Haves)
-- **Feature 1:** Description of the implemented feature.
-- **Feature 2:** Description of the implemented feature.
-
-(Include all should-have features)  
-**Guidance:** Include any advanced features you implemented during Phase 3: Should User Stories Implementation & Any Advanced Features. Explain how these features enhance user experience and their alignment with the acceptance criteria.
+**Feature 5:** The site should implement a mood switch similar to a dark/light mode switch, which allows the user to customised the site appearance based on their mood.
 
 ### Optional Features (Could-Haves)
-- **Feature 1:** Description of the implemented feature (if any).
-- **Feature 2:** Description of the implemented feature (if any).
+**Feature 1:** A mood switch function to allow the user to customise the site to suit their mood. like dark/light mode but tailored to be happy/moody modes which would effect the lighting, colours etc.
 
-(Include any could-have features that were implemented or considered)  
-**Guidance:** If any could-have features were implemented, describe them here. This is an opportunity to showcase extra work done beyond the initial scope. But remember - keep it simple! Focus on the Must stories first. Could user story features are commonly earmarked for future project iterations.
+**Feature 2:** Video Gallery which returned tailored results based on a search query
+**Feature 3:** Music Gallery which returned tailored results based on a search query
+**Feature 4:** Reading Gallery which returned tailored results based on a search query
 
 ## AI Tools Usage
+No AI used throughout the project
 
 ### GitHub Copilot
-Describe how GitHub Copilot assisted in coding, including any challenges or adjustments needed.  
-**Guidance:** Reflect on how GitHub Copilot assisted in coding, particularly any challenges or adjustments that were needed to align with project goals.
+Github Copilot was not used on this project.
 
 ## Testing and Validation
-
 ### Testing Results
-Summarize the results of testing across different devices and screen sizes.  
-Mention any issues found and how they were resolved.  
-**Guidance:** Summarize the results of your testing across various devices using tools like Chrome DevTools, as outlined in Phase 2. Mention any issues found and how they were resolved.
+The following testing on the deployed environment were performed:
+1. All links were tested in the live environment and are currently work. Testing all links did however identify that I had forgotten to add social media links to 3 of the 4 cards in the 'meet our team' section.
+2. Tested the navigation to the other pages and the return path home.
+#### Unresolved/Known Issues:
+1. There is a modal button problem that I have not been able to fix. The modal button does not close when selecting either of the close options. This is a know issue in BS 5.3 and can be immediately migrating the code to bootstrap 4.x
+2. The 'subscribe to newsletter' button currently does nothing. will probably convert to js later on. 
 
 ### Validation
-Discuss the validation process for HTML and CSS using W3C and Jigsaw validators.  
-Include the results of the validation process.  
-**Guidance:** Document your use of W3C and Jigsaw validators to ensure your HTML and CSS meet web standards. Include any errors or warnings encountered and how they were resolved.
+HTML code was validated using w3.org validator. The result returned errors as follows:
+1. line 19 had a double `<<link` as opening tag. **FIXED** 
+2. line 229: a file path used as a link contained spaces `**<img src="/assets/images/Mind Based Info-Graphic Template.jpg" alt="" class="img-fluid">**` **FIXED**
+3. line 757: Bad value `close` for attribute `type` on element button **FIXED** replaced 'close' with type 'button' 
+4. line 736: - `**<label for="repreatPassword"> Repeat Password`</label> **IGNORED** `<label for` is used by bootstrap 5.3 as part of form controls
+5. line 744: - `**<label for="repreatPassword"> Repeat Password`</label> **IGNORED** `<label for` is used by bootstrap 5.3 as part of form controls
+6. Warning: Line 81: `Consider using the `h1` element as a top-level heading only (all `h1` elements are treated as top-level headings by many screen readers and other tools)` **FIXED** h1 currently used to maintain text size. will fix with .css. Added as Issue 19 to Backlog in Project Board. The issue was due to Bootstrap Modal dialog using H1 for the dialog title. I updated the modal element to use H2 instead and now the validator passes on this issue.
+
+#### CSS Stylesheet:
+There were no validation errors found using w3.org css validator
 
 ## AI Tools Usage
+The only use of AI on the project was for the generation of user bios for the counsellors section.
+The following site creates fake bios using keywords: https://ahrefs.com/writing-tools/bio-generator.
 
 ### GitHub Copilot
-Brief reflection on the effectiveness of using AI tools for debugging and validation.  
-**Guidance:** Reflect on how GitHub Copilot assisted with debugging and validation, particularly any issues it helped resolve.
+Not used
 
 ## Deployment
+The site was deployed on Github pages using steps provided in LMS walkthrough project. See steps used below.
 
 ### Deployment Process
-Briefly describe the deployment process to GitHub Pages or another cloud platform.  
-Mention any specific challenges encountered during deployment.  
-**Guidance:** Describe the steps you took to deploy your website during Phase 4: Final Testing, Debugging & Deployment, including any challenges encountered.
+- Steps
+    1. Go to the **Settings** tab of your GitHub repo.
+    2. On the left-hand sidebar, in the **Code and automation** section, select **Pages**.
+    3. Make sure:
+        1. **Source** is set to 'Deploy from Branch'.
+        2. **Main branch** is selected.
+        3. **Folder** is set to / (root).
+    4. Under Branch, click **Save**.
+    5. Go back to the **Code** tab. Wait a few minutes for the build to finish and **refresh your repo.**
+    6. On the right-hand side, in the **Environments** section, click on 'github-pages'.
+    7. Click **View deployment** to see the live site. The URL will look similar to **YOUR-USERNAME.github.io/love-running**.
 
 ## AI Tools Usage
+No AI tools used
 
 ### Reflection
-Describe the role AI tools played in the deployment process, including any benefits or challenges.  
-**Guidance:** Reflect on how AI tools assisted with the deployment process, particularly how they streamlined any tasks or presented challenges.
+The development of this site was a great learning experience and the tight timescales replicated the importance of having an initial sketch in mind as early as possible. I found that wireframing helped prevent feature creep, because as a new developer I was eager to try out multiple things. I learned early on about the importance of MVP and how all possible updates, enhancements and additions to the design should be left until after the MVP has been achieved.
+
+I did not use any sort of AI assistance as I believe that its usage, at this stage of my career would limit my ambition of being a great coder in the future. I will hope to utilise AI once I am confident of the underlying principles of the coding languages I am learning.
 
 ## Reflection on Development Process
-
 ### Successes
-Effective use of AI tools, including GitHub Copilot and DALL-E, and how they contributed to the development process.
+My success was a relative small one in that I am pleased that I was able to build an MVP site based on a small brief with only 20 days coding experience. (I'll take the small wins for now).
 
 ### Challenges
-Describe any challenges faced when integrating AI-generated content and how they were addressed.
+My major challenge came about because of my initial designs use of side panelled table of contents. This required Bootstraps ScrollSpy which I did not have time to master.
+
+My other challenge was of a more basic nature and was related to the placement of items at exact locations on the page. I felt that with Bootstrap I had to settle for approximate locations for the placement of items but I could have spend hours moving things one pixel at a time.
+
+I had a lot of issues getting the modal dialog to work and wasted a lot of time trying to debug why the top right hand side close button was permanently left side aligned. After a lot of time playing with the code, I turned to google. in researching the issue I became aware of a know issue with version 5.3 of bootstraps where this bug is documented.
+
+Really the biggest challenge was getting over the shock of a blank design and my self-doubt (considering I have only been coding for 20 days, I forgave myself on that one). I found that getting something down, how ever small, even if it was a simple button, kick started my process. The next challenge after that was trying to stop myself from continually tinkering with the code. so starting is hard, but stopping seems harder.
 
 ### Final Thoughts
-Provide any additional insights gained during the project and thoughts on the overall process.  
-**Guidance:** Begin drafting reflections during Phase 1 and update throughout the project. Finalize this section after Phase 4. Highlight successes and challenges, particularly regarding the use of AI tools, and provide overall insights into the project.
+My main takeaway from this project was the creative block I experienced looking at a blank page. I have learned that starting on the smallest component/element kickstarts the process. However, I also learned that stopping is equally hard, and that keeping in mind the MVP principle is really important.
 
 ## Code Attribution
-Properly attribute any external code sources used in the project (excluding GitHub Copilot-generated code).  
-**Guidance:** Document any external code sources used throughout the entire project, especially during Phase 2 and Phase 3. Exclude GitHub Copilot-generated code from attribution.
+I did not use any AI assistance on this project as I feel it would defeat the point of me being on this course, which is to learn to be a competent full stack developer. Once I have the necessary coding skills I would certainly consider using AI to assist in the development process.
+
+Most of my assistance with the coding was gained by reviewing the 3 LMS walkthrough projects. In addition I heavily references w3.org and the bootstrap website.
+
+My initial framework for the site was developed by watching YouTube videos on layout and where I was stuck, trying to find walkthrough examples. In particular I was heavily influenced by Youtuber "Traversy Media" whose walkthrough video provided me with the basics of my MVP. I did however feel that I wasted a lot of time doing this but largely put that down to the nerves of facing a blank sheet design for the first time. I am confident that once I have some experience coding, that I would then start to consider some of the tasks for developing a site quite repetitive and therefore less challenging.
+
+All  my images were sourced from free online resource with the following attributations.
+- Navbar background: peterschreiber.media; from istockphotos
+- community matters card: diversity-2-1184116.jpg: Photo by <a href="/photographer/spekulator-53353">spekulator</a> on <a href="/">Freeimages.com</a>
+- your dome is your home card: mind-based-info-graphic-template-5188651.zip: Image by <a href="/">Freeimages.com</a>
 
 ## Future Improvements
-Briefly discuss potential future improvements or features that could be added to the project.  
-**Guidance:** Reflect on potential enhancements that could be made to the project after Phase 4: Final Testing, Debugging & Deployment. These could be Could user story features you didn’t have time to implement or improvements based on testing feedback.
+There are a number of improvements that could be made for the site. These include;
+- a redesign of the colour pallet for the entire site to aid with accessibility
+- the development of the linked pages (video, reading, and music)
+	- The music page as to provide embedded media plays in a gallery format with a search function that allowed the user to filter on types of music (e.g meditation music, yoga music, etc.) with the search limiting the embedded media players displayed based on the search results
+	- The video page was to be the same format as the music page but with embedded videos.
+	- The reading page was to have the same search functionality but would return a search based on the type of reading required (e.g scholarly, blog, pdf books etc.)
+- I am not sure if it is even possible but i wanted the accordion section to refresh the quote on a regular basis so that the site did not become static and act as an evolving landscape for the user each time they visited.
